@@ -1,0 +1,45 @@
+﻿Build started 8/10/2014 9:09:10 μμ.
+     1>Project "C:\Users\DamianosMt\Documents\Visual Studio 2013\Projects\glGASmartBody\glGASmartBody\glGASmartBody.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\DamianosMt\smartbody\lib\xerces-c\include" /IC:\Users\DamianosMt\smartbody\lib\bonebus\include /I"C:\Users\DamianosMt\smartbody\lib\vhmsg\vhmsg-c\include" /IC:\Users\DamianosMt\smartbody\lib\vhcl\include /IC:\Users\DamianosMt\smartbody\core\smartbody\SmartBody\src\external\protobuf\include /IC:\Users\DamianosMt\smartbody\core\smartbody\SmartBody\src /IC:\Users\DamianosMt\smartbody\core\smartbody\Python27\include /IC:\Users\DamianosMt\smartbody\core\smartbody\ode\include /I"C:\Users\DamianosMt\smartbody\core\smartbody\steersuite-1.3\external" /I"C:\Users\DamianosMt\smartbody\core\smartbody\steersuite-1.3\pprAI\include" /I"C:\Users\DamianosMt\smartbody\core\smartbody\steersuite-1.3\steerlib\include" /IC:\Users\DamianosMt\smartbody\lib\boost /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt BmlEventHandler.cpp glGASmartBody.cpp glgasmartbodylistener.cpp
+         glgasmartbodylistener.cpp
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\windef.h(126): warning C4005: 'APIENTRY' : macro redefinition
+                 c:\users\damianosmt\documents\github\glga\_thirdpartylibs\include\glfw\gl\glfw.h(74) : see previous definition of 'APIENTRY'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\wingdi.h(30): warning C4005: 'WINGDIAPI' : macro redefinition
+                 c:\users\damianosmt\documents\github\glga\_thirdpartylibs\include\glfw\gl\glfw.h(91) : see previous definition of 'WINGDIAPI'
+     1>c:\users\damianosmt\smartbody\lib\vhcl\include\vhcl_win32.h(96): warning C4005: 'NTDDI_VERSION' : macro redefinition
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\sdkddkver.h(203) : see previous definition of 'NTDDI_VERSION'
+         glGASmartBody.cpp
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\windef.h(126): warning C4005: 'APIENTRY' : macro redefinition
+                 c:\users\damianosmt\documents\github\glga\_thirdpartylibs\include\glfw\gl\glfw.h(74) : see previous definition of 'APIENTRY'
+     1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\wingdi.h(30): warning C4005: 'WINGDIAPI' : macro redefinition
+                 c:\users\damianosmt\documents\github\glga\_thirdpartylibs\include\glfw\gl\glfw.h(91) : see previous definition of 'WINGDIAPI'
+     1>c:\users\damianosmt\smartbody\lib\vhcl\include\vhcl_win32.h(96): warning C4005: 'NTDDI_VERSION' : macro redefinition
+                 c:\program files (x86)\microsoft sdks\windows\v7.0a\include\sdkddkver.h(203) : see previous definition of 'NTDDI_VERSION'
+     1>c:\users\damianosmt\documents\visual studio 2013\projects\glgasmartbody\glgasmartbody\glgasmartbody.cpp(867): warning C4244: '+=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>c:\users\damianosmt\documents\visual studio 2013\projects\glgasmartbody\glgasmartbody\glgasmartbody.cpp(907): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         GLM: perspective function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+         GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
+         BmlEventHandler.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\glGASmartBody.exe.embed.manifest.res" Debug\glGASmartBody_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\DamianosMt\Documents\Visual Studio 2013\Projects\glGASmartBody\Debug\glGASmartBody.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\DamianosMt\smartbody\core\smartbody\Python27\libs9 /LIBPATH:C:\Users\DamianosMt\smartbody\lib\boost\lib /LIBPATH:"C:\Users\DamianosMt\smartbody\lib\activemq\activemq-cpp\vs2010-build\DebugDLL" /LIBPATH:C:\Users\DamianosMt\smartbody\lib\pthreads\lib /LIBPATH:C:\Users\DamianosMt\smartbody\lib\bonebus\lib /LIBPATH:"C:\Users\DamianosMt\smartbody\lib\vhmsg\vhmsg-c\lib" /LIBPATH:C:\Users\DamianosMt\smartbody\lib\vhcl\libsndfile\lib /LIBPATH:C:\Users\DamianosMt\smartbody\lib\vhcl\lib /LIBPATH:C:\Users\DamianosMt\smartbody\lib\vhcl\openal\libs\Win32 /LIBPATH:C:\Users\DamianosMt\smartbody\core\smartbody\SmartBody\lib glew32.lib vhcl_d.lib vhmsg_d.lib SmartBody_d.lib pthreadVSE2.lib "activemq-cppd.lib" OpenAL32.lib ws2_32.lib rpcrt4.lib winmm.lib "boost_filesystem-vc100-mt-gd-1_51.lib" "boost_system-vc100-mt-gd-1_51.lib" "boost_regex-vc100-mt-gd-1_51.lib" "boost_python-vc100-mt-gd-1_51.lib" opengl32.lib glu32.lib glGAd.lib AntTweakBar.lib assimpd.lib glew32d.lib GLFWDLL.lib irrKlang.lib "soil2-debug.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\glGASmartBody.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\DamianosMt\Documents\Visual Studio 2013\Projects\glGASmartBody\Debug\glGASmartBody.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\DamianosMt\Documents\Visual Studio 2013\Projects\glGASmartBody\Debug\glGASmartBody.lib" /MACHINE:X86 Debug\glGASmartBody.exe.embed.manifest.res
+         Debug\BmlEventHandler.obj
+         Debug\glGASmartBody.obj
+         Debug\glgasmartbodylistener.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\glGASmartBody.exe.embed.manifest" /manifest Debug\glGASmartBody.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\glGASmartBody.exe.embed.manifest.res" Debug\glGASmartBody_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\DamianosMt\Documents\Visual Studio 2013\Projects\glGASmartBody\Debug\glGASmartBody.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\DamianosMt\smartbody\core\smartbody\Python27\libs9 /LIBPATH:C:\Users\DamianosMt\smartbody\lib\boost\lib /LIBPATH:"C:\Users\DamianosMt\smartbody\lib\activemq\activemq-cpp\vs2010-build\DebugDLL" /LIBPATH:C:\Users\DamianosMt\smartbody\lib\pthreads\lib /LIBPATH:C:\Users\DamianosMt\smartbody\lib\bonebus\lib /LIBPATH:"C:\Users\DamianosMt\smartbody\lib\vhmsg\vhmsg-c\lib" /LIBPATH:C:\Users\DamianosMt\smartbody\lib\vhcl\libsndfile\lib /LIBPATH:C:\Users\DamianosMt\smartbody\lib\vhcl\lib /LIBPATH:C:\Users\DamianosMt\smartbody\lib\vhcl\openal\libs\Win32 /LIBPATH:C:\Users\DamianosMt\smartbody\core\smartbody\SmartBody\lib glew32.lib vhcl_d.lib vhmsg_d.lib SmartBody_d.lib pthreadVSE2.lib "activemq-cppd.lib" OpenAL32.lib ws2_32.lib rpcrt4.lib winmm.lib "boost_filesystem-vc100-mt-gd-1_51.lib" "boost_system-vc100-mt-gd-1_51.lib" "boost_regex-vc100-mt-gd-1_51.lib" "boost_python-vc100-mt-gd-1_51.lib" opengl32.lib glu32.lib glGAd.lib AntTweakBar.lib assimpd.lib glew32d.lib GLFWDLL.lib irrKlang.lib "soil2-debug.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\glGASmartBody.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\DamianosMt\Documents\Visual Studio 2013\Projects\glGASmartBody\Debug\glGASmartBody.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\DamianosMt\Documents\Visual Studio 2013\Projects\glGASmartBody\Debug\glGASmartBody.lib" /MACHINE:X86 Debug\glGASmartBody.exe.embed.manifest.res
+         Debug\BmlEventHandler.obj
+         Debug\glGASmartBody.obj
+         Debug\glgasmartbodylistener.obj
+         glGASmartBody.vcxproj -> C:\Users\DamianosMt\Documents\Visual Studio 2013\Projects\glGASmartBody\Debug\glGASmartBody.exe
+     1>Done Building Project "C:\Users\DamianosMt\Documents\Visual Studio 2013\Projects\glGASmartBody\glGASmartBody\glGASmartBody.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:45.69

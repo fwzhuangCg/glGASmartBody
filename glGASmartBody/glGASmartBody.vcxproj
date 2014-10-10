@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{407F3069-F3FC-4707-A6B8-F6432B757F42}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>glGASmartBody</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(GLGA)\libraries\include;$(GLGA)\_thirdPartyLibs\include;$(GLGA)\_thirdPartyLibs\include\glew;$(GLGA)\_thirdPartyLibs\include\glfw;$(GLGA)\_thirdPartyLibs\include\SOIL2;$(GLGA)\_thirdPartyLibs\include\Assimp;$(GLGA)\_thirdPartyLibs\include\GLM;$(IncludePath)</IncludePath>
+    <LibraryPath>$(GLGA)\_thirdPartyLibs\lib\Windows;$(GLGA)\libraries\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildFrameworkToolsPath32);</ExecutablePath>
+    <ReferencePath>$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib</ReferencePath>
+    <SourcePath>$(VCInstallDir)atlmfc\src\mfc;$(VCInstallDir)atlmfc\src\mfcm;$(VCInstallDir)atlmfc\src\atl;$(VCInstallDir)crt\src;</SourcePath>
+    <ExcludePath>$(ExcludePath);$(MSBuildFrameworkToolsPath);$(MSBuildFrameworkToolsPath32);</ExcludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\DamianosMt\smartbody\lib\xerces-c\include;C:\Users\DamianosMt\smartbody\lib\bonebus\include;C:\Users\DamianosMt\smartbody\lib\vhmsg\vhmsg-c\include;C:\Users\DamianosMt\smartbody\lib\vhcl\include;C:\Users\DamianosMt\smartbody\core\smartbody\SmartBody\src\external\protobuf\include;C:\Users\DamianosMt\smartbody\core\smartbody\SmartBody\src;C:\Users\DamianosMt\smartbody\core\smartbody\Python27\include;C:\Users\DamianosMt\smartbody\core\smartbody\ode\include;C:\Users\DamianosMt\smartbody\core\smartbody\steersuite-1.3\external;C:\Users\DamianosMt\smartbody\core\smartbody\steersuite-1.3\pprAI\include;C:\Users\DamianosMt\smartbody\core\smartbody\steersuite-1.3\steerlib\include;C:\Users\DamianosMt\smartbody\lib\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\DamianosMt\smartbody\core\smartbody\Python27\libs9;C:\Users\DamianosMt\smartbody\lib\boost\lib;C:\Users\DamianosMt\smartbody\lib\activemq\activemq-cpp\vs2010-build\DebugDLL;C:\Users\DamianosMt\smartbody\lib\pthreads\lib;C:\Users\DamianosMt\smartbody\lib\bonebus\lib;C:\Users\DamianosMt\smartbody\lib\vhmsg\vhmsg-c\lib;C:\Users\DamianosMt\smartbody\lib\vhcl\libsndfile\lib;C:\Users\DamianosMt\smartbody\lib\vhcl\lib;C:\Users\DamianosMt\smartbody\lib\vhcl\openal\libs\Win32;C:\Users\DamianosMt\smartbody\core\smartbody\SmartBody\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;vhcl_d.lib;vhmsg_d.lib;SmartBody_d.lib;pthreadVSE2.lib;activemq-cppd.lib;OpenAL32.lib;ws2_32.lib;rpcrt4.lib;winmm.lib;boost_filesystem-vc100-mt-gd-1_51.lib;boost_system-vc100-mt-gd-1_51.lib;boost_regex-vc100-mt-gd-1_51.lib;boost_python-vc100-mt-gd-1_51.lib;opengl32.lib;glu32.lib;glGAd.lib;AntTweakBar.lib;assimpd.lib;glew32d.lib;GLFWDLL.lib;irrKlang.lib;soil2-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BmlEventHandler.cpp" />
+    <ClCompile Include="glGASmartBody.cpp" />
+    <ClCompile Include="glgasmartbodylistener.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BmlEventHandler.h" />
+    <ClInclude Include="glgasmartbody.h" />
+    <ClInclude Include="glgasmartbodylistener.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
